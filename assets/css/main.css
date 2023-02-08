@@ -4835,17 +4835,63 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   text-align: left;
 }
 
-.skills {
-  padding-left: 1rem;
+.resume.email {
+  font-size: 1rem;
+}
+
+.resume.email:nth-of-type(2) {
+  color: darkslategray;
+  text-transform: none;
+  font-size: 0.8rem;
+}
+
+.resume.links {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.resume.links a {
+  padding: 0 0.5rem;
+}
+
+.resume.subheading {
+  padding-bottom: 0 !important;
+}
+
+.resume.skills {
+  padding-top: 0 !important;
   color: darkslategrey;
-  text-transform: lowercase;
-  font-weight: 200;
 }
 
 .downloadPdf {
   float: right;
   font-size: 1rem;
   text-transform: none;
+}
+
+.repos a,
+.resume.work {
+  font-weight: 900;
+}
+
+.resume.work {
+  padding-bottom: 0 !important;
+}
+
+.resume.workdate {
+  padding-top: 0 !important;
+}
+
+.resume.job {
+  color: darkslategray;
+  padding-bottom: 0 !important;
+  font-weight: 900 !important;
+  font-size: 1.2rem !important;
+}
+
+.techstack {
+  font-size: 0.8rem;
+  color: darkslategray;
 }
 
 .cv.social {
