@@ -2735,7 +2735,7 @@ input[type='radio']:focus + label:before {
 
 .image.main {
   display: block;
-  margin: 4rem 0;
+  margin: 2rem 0;
   width: 100%;
 }
 
@@ -4804,5 +4804,70 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     transform: translateX(0);
     box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
     visibility: visible;
+  }
+}
+
+/* custom styles */
+.caption > p {
+  font-size: 32pt;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.responsive-table thead {
+  background-color: #333;
+  color: #fff;
+}
+
+.responsive-table th {
+  color: #fff;
+}
+
+.responsive-table th,
+.responsive-table td {
+  padding: 1rem;
+  text-align: left;
+}
+
+.skills {
+  padding-left: 1rem;
+  color: darkslategrey;
+  text-transform: lowercase;
+  font-weight: 200;
+}
+
+.downloadPdf {
+  float: right;
+  font-size: 1rem;
+  text-transform: none;
+}
+
+.cv.social {
+  font-size: 1rem;
+  color: darkslategray;
+}
+
+/* eof custom styles */
+
+@media (max-width: 767px) {
+  .responsive-table thead {
+    display: none;
+  }
+  .responsive-table td {
+    display: block;
+    border-bottom: 1px solid #ddd;
+  }
+  .responsive-table td:first-child {
+    background-color: #333;
+    color: #fff;
+  }
+  .responsive-table td:last-child {
+    border-bottom: 0;
   }
 }
